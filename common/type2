@@ -1,0 +1,7 @@
+dcos:secrets:default:/{{service_name}}/* full
+dcos:secrets:list:default:/{{service_name}} read
+dcos:adminrouter:ops:ca:rw full
+dcos:adminrouter:ops:ca:ro full
+dcos:mesos:master:task:app_id:{{service_name}} create
+dcos:mesos:master:reservation:principal:{{service_account}} create
+dcos:mesos:master:volume:principal:{{service_account}} create

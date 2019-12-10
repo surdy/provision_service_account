@@ -1,0 +1,8 @@
+{{#strict}}
+dcos:mesos:master:task:user:nobody create 
+{{/strict}}
+dcos:mesos:master:framework:role:{{service_role}} create 
+dcos:mesos:master:reservation:role:{{service_role}}  create 
+dcos:mesos:master:volume:role:{{service_role}} create
+dcos:mesos:master:reservation:principal:{{service_account}} delete
+dcos:mesos:master:volume:principal:{{service_account}} delete 
