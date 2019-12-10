@@ -23,6 +23,7 @@ This is a script to compute the correct ACLs for package depending upon
 * Computes DC/OS security mode
 * Computes if top-level group is `enforceRole=true`
 * Assumes`enforceRole=true` for a new top level group unless root `/`
+* Package list not exhaustive in terms of packages as well as versions
 
 ## Future work 
 * This should be part of DC/OS so that user does not have to think
